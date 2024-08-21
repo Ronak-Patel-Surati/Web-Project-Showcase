@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: gray;
+            margin: 96px;
+        }
+        .card{
+            background-color: white;
+            width: 312px;
+            height: 650px;
+            border-radius:  16px;
+            margin: 8px;
+        }
+        .image{
+            padding: 10px;
+        }
+        .image img{
+            border-radius:  16px;
+        }
+        .content{
+            padding: 4px 26px;
+            font-size: "poppis";
+        }
+        .content p{
+            font-size:  22px;
+            font-family: 'Poppins' , sans-serif;
+            font-weight: 200;
+        }
+        .capsules{
+            padding: 0 24px;
+            font-family: 'Poppins' , sans-serif;
+        }
+        .capsules span{
+            border: 2px solid gray;
+            padding:0  20px;
+            border-radius: 16px;
+            font-size: 16px;
+        }
+        content h2{
+            font-size: 64px;
+            padding-top: 96px;
+            padding-bottom: 96px;
+        } 
+        h2{
+            padding: 16px 0 ;
+        }
+        .button{
+            text-align: center;
+
+        }
+        .button button{
+            padding: 4% 16px;
+            border-radius: 16px;
+            background-color: blue;
+            color: white;
+            font-size: 24px;
+            border: none;
+            margin-top: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .button button:hover{
+            background-color: rgb(0, 0, 153);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <div class="image">
+            <img src="porche car.jpg" alt="" width="292px">
+        </div>
+
+        <div class="capsules">
+            <span>Car</span>
+            <span>Germany</span>
+        </div>
+        <div class="content">
+            <h2>Porche 911</h2><p>
+                The Porsche 911 is an iconic sports car, renowned for its timeless design, exceptional performance, and enduring engineering excellence. </p>
+
+        </div>
+        <div class="button">
+            <button type="submit"> Read More </button>
+        </div>
+    </div>
+</body>
+</html>
