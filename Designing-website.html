@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+        :root{
+            --primary-color: rgb(37, 37, 37);
+            --text-color: white;
+            --secondary-color: rgb(235, 235, 235);
+            --card-color1: lightsalmon;
+            --card-color2: lightblue;
+            --border-color: lightgray;
+            --background-color: #fff;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        body{
+            background-color: var(--secondary-color);
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: large;
+            font-weight: 500;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--primary-color);
+            padding: 12px 0;
+            font-family: "poppins";
+            position: sticky, -webkit-sticky;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+            width: 90%;
+            margin: 16px  auto;
+            padding: 4px;
+            background-color: var(--background-color);
+            border-radius: 26px;
+        }
+        .card{
+            display: inline-block;
+            margin: 16px;
+            padding: 32px;
+            width: 40%;
+            border: 2px solid var(--border-colors);
+            border-radius: 16px;
+            font-family: "Poppins";
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid var(--border-colors);
+            padding: 24px;
+            background-color: darkslategray;
+            color: aliceblue;
+        }
+
+        footer div{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 32px;
+        }
+        #card-1{
+            background-color: var(--card-color1);
+        }
+        #card-2{
+            background-color: var(--card-color2);
+        }
+        .welcome{
+            /* display: flex;
+            justify-content: space-around; */
+            margin: 16px  auto;
+            padding: 4px;
+            width: 89%;
+            margin: 16px  auto;
+            padding: 8px;
+            background-color: var(--background-color);
+            border-radius: 26px;
+        }
+        .text{
+            background-color: lightcyan;
+            margin: 18px;
+            padding: 16px;
+            font-family: "Poppins";
+            font-size: 18px;
+            border-radius: 16px;
+        }
+        .border{
+            border: 2px solid var(--border-color);   
+        }
+       #button{
+        position: fixed;
+        bottom: 48px;
+        right: 48px;
+        border: var(--border-color);
+        background-color: blue;
+        border-radius: 100%;
+        height: 72px;
+        width: 72px;
+        padding: auto 12px;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">CS50 Web Dev </a></li>
+                <li><a href="/">Learn</a></li>
+                <li><a href="/">Problem</a></li>
+                <li><a href="/">Support</a></li>
+            </ul>
+        </nav>
+        <!-- just  navbar practice -->
+    </header>
+    <div id="button">+</div>
+
+    <main>
+        <section>
+            <div class="cards border">
+                <div class="card border" id="card-1">Rust programmers are like the hipster baristas of coding—constantly preaching about safety, but secretly loving the pain of compiler errors. They wear their `borrow checker` struggles like badges of honor, sipping artisanal coffee while meticulously avoiding null pointers. To them, memory safety is a religion, and they’re the priests, spreading the gospel of ownership and lifetimes. They’ll sneer at your garbage collection, boasting about how they don’t need one. If code isn’t 100% safe and efficient, it might as well be written in crayon. But don’t worry—they’ll still be debugging at 2 AM, cursing their own perfectionism. - Ronak </div>
+                <div class="card border" id="card-2">BMW drivers are like the royalty of the road—entitled, oblivious, and convinced their turn signals are purely decorative. They wield their ultimate driving machines like they're in a video game, swerving through traffic with the grace of a caffeinated squirrel. Parking? Optional. Speed limits? Merely suggestions. They have an unspoken pact: if you’re not in a BMW, you’re simply in the way. But hey, at least they always arrive fashionably late—thanks to all those "urgent" pit stops at Starbucks.   - Ronak</div>
+            </div>
+    </section>
+    <section>
+        <div class="welcome border">
+            <div class="text border">Ah, the tech YouTuber—the modern-day oracle with an endless supply of hype and zero chill. They unbox the latest gadgets like they’re defusing a bomb, only to spend 10 minutes gushing about the packaging. Somehow, they make every new phone sound like it’s going to cure world hunger, when really, it’s just slightly faster at loading TikTok. And don’t forget their thumbnail game—always with the exaggerated gasp, like they just discovered fire. But let’s be honest, their content is basically “Here’s why you need this... until next year’s model comes out.”</div>
+
+            <div class="text border">Sure, here’s a playful roast of a generic tech YouTuber:
+
+                ---
+                
+                Oh look, another tech YouTuber who thinks they’re reinventing the wheel—more like adding a shiny new sticker to it. You know, the type who unboxes gadgets like they’re unwrapping the Holy Grail, only to spend the next 20 minutes explaining how the box is “premium.”
+                
+                With that signature over-enthusiasm, they’re here to tell you how this year's smartphone is totally different from last year's—because, you know, the camera bump moved 0.2 millimeters to the left. Revolutionary, right? But wait, they’re about to drop a 30-minute video on why that extra megapixel is going to change your life. Spoiler alert: it won’t.
+                
+                Then there’s the endless parade of clickbait thumbnails. Every single one is just them, wide-eyed, mouth agape, holding up the latest gadget like it’s an alien artifact. And don’t even get me started on those titles—“YOU WON’T BELIEVE WHAT HAPPENS NEXT!” Oh, we believe it, alright. Another overhyped product that’s slightly better at wasting our time.
+                
+                Of course, they can’t review anything without mentioning that they’re “not sponsored”—but the next 10 minutes are just a love letter to the brand anyway. And then, like clockwork, they’ll throw in a “quick” plug for their merch. Because nothing says “tech guru” like selling overpriced T-shirts to your audience.
+                
+                And let’s talk about those “epic” montages. Slow-mo shots of them plugging in a cable, because apparently, we need dramatic music to understand that this is a USB-C port. They’ll even throw in some drone footage for no apparent reason, because why not flex those cinematography skills while reviewing a toaster?
+                
+                But the real kicker? They’ve got a room full of gadgets, yet they still manage to film with the personality of a cardboard box. You know you’re in for a treat when their most exciting moment is comparing the battery life of two nearly identical devices, like that’s the cliffhanger we’ve been waiting for.
+                
+                And at the end of the day, after all the hype, all the unboxing, and all the self-indulgent B-roll, what do we get? A lukewarm take on a product we already knew everything about. But hey, at least they’ll remind us to like, comment, and subscribe—because clearly, we haven’t seen that in every single one of their videos.
+                
+                ---
+                
+                This roast is all in good fun and aims to exaggerate common traits seen in tech YouTubers!</div>
+
+            <div class="text border">Oh, the tech YouTuber—part reviewer, part salesperson, and 100% convinced their opinion is more valuable than the latest iPhone. With a backdrop that looks like an IKEA showroom vomited LEDs, they sit there, dramatically unboxing gadgets like they're handling ancient relics. "First impressions? *Incredible*," they say, as if that plastic-wrapped smartphone hasn't already been reviewed by 5,000 other people. Their camera setup is worth more than the device they're reviewing, but hey, it’s all about that *crispy bokeh* and pretending the audience cares about the color accuracy of the shot.
+
+                Of course, they’ve got the classic tech voice: overly enthusiastic with that slow, overly deliberate enunciation, because apparently, we need to hear the word *"smooth"* like it’s the cure for all humanity’s problems. "Is this the best smartphone of 2024?" No, Chad, it's just like last year's model but with a slightly better camera and a bigger hole in my wallet. But you’ll tell us it’s revolutionary anyway because, shocker, it was sent to you for free.
+                
+                Don't even get me started on the sponsored content. Ah yes, "This video is brought to you by RAID Shadow Legends"—because nothing says cutting-edge tech expertise like a mobile game you played for five minutes to get that sweet, sweet ad money. And let's not forget the painfully obvious *unbiased* reviews, as they glance nervously at the boxes of free gadgets stacking up in the background.
+                
+                Every year, they crank out a new "Best Tech Under $50" video, and it’s just 10 different versions of the same Bluetooth earbuds and power banks. But don't worry, they'll *pretend* the products are game-changers. "This $10 plastic charger will CHANGE YOUR LIFE." Yeah, right, as if I haven’t already got a drawer full of them from your *previous* recommendations.
+                
+                And for the love of tech, can they stop flexing their standing desks and multi-monitor setups like they’re the future of human evolution? We get it, your entire identity is pixels and Wi-Fi, but chill, dude. You're one RGB light strip away from turning your office into a rave.
+                
+                They’ve got that “everyman” vibe down too, except they're sitting in front of a $10,000 gaming PC, wearing $400 headphones, and using a mousepad the size of a yoga mat. But don’t worry, they “totally understand” what it’s like to be on a budget… from their custom-built $5,000 workstation that makes the average person’s laptop look like it was assembled in a basement. And they *always* end the video by saying, “Let me know your thoughts in the comments.” Yeah, because what the world really needs is more opinions from keyboard warriors debating the latest RAM upgrade.
+                
+                In conclusion: they’ll pretend they’re doing you a favor, but at the end of the day, it’s just them living out their tech dreams while you sit there with your three-year-old phone wondering if you really need a Wi-Fi toaster.</div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div>
+            Copyright Ronak.CS50 
+        </div>
+        <div>
+            Copyright Ronak.CS50 
+        </div>
+    </footer>
+    </body>
+</html>
