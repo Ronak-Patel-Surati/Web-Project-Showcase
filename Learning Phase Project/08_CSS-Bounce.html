@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bounce--Using--Css</title>
+         <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{ 
+                display: flex;
+                flex-direction: column;
+                justify-content:end;
+                align-items:baseline;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(132, 205, 234, 0.616);
+                gap: 2rem;
+                /* padding: 1rem; */
+            }
+            .box{
+               padding: 3rem;
+               margin: 2rem;
+               width:2rem;
+               border-radius: 50%;
+               height: 2rem;
+               background-color: red;
+               
+            }
+            .box1{
+                animation: bounce 2s linear infinite alternate backwards;
+            }
+            @keyframes bounce{
+                0%{
+                    transform: translate(0,0)  
+                }20%{
+                    transform: translate(10rem, -20rem)
+                }40%{
+                    transform: translate(20rem)
+                }60%{
+                    transform: translate(30rem, -20rem)
+                }
+                70%{
+                    transform: translate(40rem)
+                }80%{
+                    transform: translate(50rem, -20rem)
+                }90%{
+                    transform: translate(60rem)
+                }100%{
+                    transform: translate(70rem, -20rem)
+                }
+            }
+               
+    
+         </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box1"></div>
+        </div>
+    </body>
+    </html>ś
