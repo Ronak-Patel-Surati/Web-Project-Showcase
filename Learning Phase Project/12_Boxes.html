@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxing</title>
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid black;
+        justify-content: space-between;
+      }
+      .box {
+        border: 1px solid blue;
+        margin: 14px auto;
+        padding: 48px;
+        font-size: 19px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Given 5 boxes, assign a random color and a random background to each box using dom concepts  -->
+    <div class="container">
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+    </div>
+    <script>
+      let boxes = document.getElementsByClassName("box");
+      console.log(boxes);
+
+      const randomColor = () => {
+        let r = Math.ceil(0 + Math.random() * 255);
+        let g = Math.ceil(0 + Math.random() * 255);
+        let b = Math.ceil(0 + Math.random() * 255);
+        return `rgb(${r},${g},${b})`;
+      };
+      Array.from(boxes).forEach((element) => {
+        element.style.backgroundColor = randomColor();
+        element.style.color = randomColor();
+
+      });
+
+    </script>
+  </body>
+</html>
