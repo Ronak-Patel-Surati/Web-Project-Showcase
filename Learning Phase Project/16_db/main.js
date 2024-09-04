@@ -12,7 +12,7 @@ const getRandom = (arr)=>{
     let rno = Math.floor(Math.random() * (arr.length - 1))
     return arr[rno]
 }
-// jhkjfsdv
+
 
 app.get('/', (req, res) => {
     res.render('index', { foo: 'FOO' });
